@@ -1,0 +1,21 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-CgueXuiX.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/fonts/Nunito-Italic-VariableFont_wght.ttf": {
+    "file": "assets/Nunito-Italic-VariableFont_wght-COE5o7Ya.ttf",
+    "src": "resources/fonts/Nunito-Italic-VariableFont_wght.ttf"
+  },
+  "resources/fonts/Nunito-VariableFont_wght.ttf": {
+    "file": "assets/Nunito-VariableFont_wght-D2sADkEI.ttf",
+    "src": "resources/fonts/Nunito-VariableFont_wght.ttf"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-T1DpEqax.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}
