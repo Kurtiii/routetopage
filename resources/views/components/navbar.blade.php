@@ -1,6 +1,8 @@
 <div {{ $attributes->class(['navbar bg-base-300 shadow-sm']) }}>
     <div class="navbar-start">
-        <img src="{{asset('images/logo.webp')}}" alt="Logo" class="h-5 ms-3">
+        <a href="{{route('index')}}">
+            <img src="{{asset('images/logo.webp')}}" alt="Logo" class="h-5 ms-3">
+        </a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
