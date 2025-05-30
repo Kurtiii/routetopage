@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-CgueXuiX.css",
+    "file": "assets/app-0LZOPA-w.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -16,6 +16,24 @@
     "file": "assets/app-T1DpEqax.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/file_download.js": {
+    "file": "assets/file_download-CSz6uPSk.js",
+    "name": "file_download",
+    "src": "resources/js/file_download.js",
+    "isEntry": true
+  },
+  "resources/js/file_upload.js": {
+    "file": "assets/file_upload-B4__fUBD.js",
+    "name": "file_upload",
+    "src": "resources/js/file_upload.js",
+    "isEntry": true
+  },
+  "resources/js/privacy_notice.js": {
+    "file": "assets/privacy_notice-BOt1VTuM.js",
+    "name": "privacy_notice",
+    "src": "resources/js/privacy_notice.js",
     "isEntry": true
   }
 }

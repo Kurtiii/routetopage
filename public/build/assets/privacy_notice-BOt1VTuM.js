@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.getElementById("privacy-notice"),t=document.getElementById("privacy-notice-close");e&&(localStorage.getItem("privacyNoticeAccepted")||(e.style.display="block"),t.addEventListener("click",function(){e.style.display="none",localStorage.setItem("privacyNoticeAccepted","true")}))});

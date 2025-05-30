@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const n=document.getElementById("btnDownload"),e=document.getElementById("modal_downloaded");n&&n.addEventListener("click",function(){const o=n.getAttribute("data-file-url");o?(e.showModal(),window.open(o,"_blank")):console.error("File URL not found.")})});
