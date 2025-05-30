@@ -1,5 +1,5 @@
 <x-layout title="{{__('Create or open')}}" description="{{__('Create a route to any URL or file and share it with others.')}}">
-    <div role="alert" class="alert alert-vertical sm:alert-horizontal mt-4">
+    <div role="alert" class="alert alert-horizontal mt-4">
         <i class="fa-regular fa-party-horn text-xl shrink-0"></i>
         <div>
             <h3 class="font-bold">
@@ -9,10 +9,6 @@
                 {{__('We are excited to announce the launch of our new design and features!')}}
             </div>
         </div>
-        <button class="btn btn-sm w-full lg:w-auto">
-            <i class="fa-regular fa-arrow-up-right-from-square"></i>
-            {{__('Read more')}}
-        </button>
     </div>
 
     <div class="card card-border bg-base-100 shadow-xl mt-5">
