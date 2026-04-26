@@ -9,7 +9,9 @@ Route::get('/privacy', [App\Http\Controllers\StaticController::class, 'privacy']
 Route::get('/guidelines', [App\Http\Controllers\StaticController::class, 'guidelines'])->name('faq.guidelines');
 Route::get('/developers', [App\Http\Controllers\StaticController::class, 'developers'])->name('developers');
 
-Route::post('/route', [App\Http\Controllers\RouteCodeController::class, 'store'])->name('route.store');
+Route::post('/route', [App\Http\Controllers\RouteCodeController::class, 'store'])
+    ->name('route.store')
+    ->withoutMiddleware([Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::class]);
 
 Route::get('/route/created', [App\Http\Controllers\RouteCodeController::class, 'created'])->middleware('throttle:10,1')->name('route.created');
 
