@@ -22,7 +22,9 @@ class RouteCodeController extends Controller
             'routeExpiration' => 'nullable|string',
         ]);
 
-        if($request->input('input')) {
+        dd($request->all());
+
+        if($request->has('input') && $request->input('input') !== '') {
             $type = "url";
         } elseif ($request->hasFile('file')) {
             $type = "file";
