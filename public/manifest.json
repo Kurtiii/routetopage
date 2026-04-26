@@ -1,0 +1,33 @@
+{
+    "name": "Route To Page",
+    "short_name": "Route To Page",
+    "background_color": "#fff7ed",
+    "display": "fullscreen",
+    "description": "Quickly share urls, files and more!",
+    "theme_color": "#c44700",
+    "share_target": {
+        "action": "/route",
+        "method": "POST",
+        "enctype": "multipart/form-data",
+        "params": {
+            "url": "input",
+            "files": [
+                {
+                    "name": "file",
+                    "accept": [
+                        "*/*"
+                    ]
+                }
+            ]
+        }
+    },
+    "start_url": "/",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
