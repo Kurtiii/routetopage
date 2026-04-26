@@ -38,6 +38,8 @@ return [
             "method" => "POST",
             "enctype" => "multipart/form-data",
             "params" => [
+                "title" => "name",
+                "text" => "description",
                 "url" => "input",
                 "files" => [
                     [
