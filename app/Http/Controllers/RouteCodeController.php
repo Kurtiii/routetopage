@@ -16,13 +16,13 @@ class RouteCodeController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->all());
+
         $request->validate([
             'input' => 'nullable|string|max:255',
             'file' => 'nullable|file|max:1024000', // 1 GB in KB
             'routeExpiration' => 'nullable|string',
         ]);
-
-        dd($request->all());
 
         if($request->has('input') && $request->input('input') !== '') {
             $type = "url";
