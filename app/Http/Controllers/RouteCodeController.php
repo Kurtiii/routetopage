@@ -20,8 +20,18 @@ class RouteCodeController extends Controller
             'input' => 'nullable|string|max:255',
             'file' => 'nullable|file|max:1024000', // 1 GB in KB
             'routeExpiration' => 'nullable|string',
-            'type' => 'required|string|in:url,file',
         ]);
+
+        if($request->input('input')) {
+            $type = "url";
+        } elseif ($request->hasFile('file')) {
+            $type = "file";
+        } else {
+            return redirect()->back()->with(
+                'error',
+                __('You must provide either a URL or a file to create a route code.')
+            );
+        }
 
         // check if input is a valid route code
         if (strlen($request->input('input')) == 5) {
@@ -51,7 +61,7 @@ class RouteCodeController extends Controller
         }
 
         // URL
-        if (request()->input('type') === 'url') {
+        if ($type === 'url') {
             // check if the input is a valid URL
             if (!filter_var(request()->input('input'), FILTER_VALIDATE_URL)) {
                 return redirect()->back()->with(
@@ -78,7 +88,7 @@ class RouteCodeController extends Controller
         }
 
         // File
-        if (request()->input('type') === 'file') {
+        if ($type === 'file') {
             // upload to s3
             if (!$request->hasFile('file') || !$request->file('file')->isValid()) {
                 return redirect()->back()->with(
