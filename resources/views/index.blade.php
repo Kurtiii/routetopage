@@ -30,7 +30,7 @@
                 <input type="hidden" name="type" value="url" />
                 <input type="text" class="hidden" id="routeExpiration" name="routeExpiration" value="" />
             </form>
-            <div class="flex flex-row gap-5 items-center mt-3">
+            <div class="flex flex-row gap-3 items-center mt-3">
                 <button class="btn btn-sm" id="btnAttachFile"><i class="fa-regular fa-paperclip"></i>{{__('Attach file')}}</button>
 {{--                <button class="btn btn-sm"><i class="fa-regular fa-file-lines"></i>{{__('Paste text')}}</button>--}}
                 <button class="btn btn-sm ms-auto" onclick="modal_configure.showModal()">
